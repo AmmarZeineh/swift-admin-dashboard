@@ -75,6 +75,10 @@ class HomeRepoImpl implements HomeRepo {
   @override
   Future<Either<Failure, void>> rejectSeller(SellerEntity sellerEntity) async {
     try {
+      await dataBaseService.addData(
+        path: BackendEndpoints.rejectedSellers,
+        data: {'email': sellerEntity.email},
+      );
       await dataBaseService.deleteData(
         path: BackendEndpoints.pendingSellers,
         id: sellerEntity.id,

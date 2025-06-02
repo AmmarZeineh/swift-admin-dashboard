@@ -3,4 +3,5 @@ class BackendEndpoints {
   static const images = 'id.images';
   static const users = 'users';
   static const sellers = 'sellers';
+  static const rejectedSellers = 'rejected_sellers';
 }
