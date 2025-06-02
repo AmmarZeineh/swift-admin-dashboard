@@ -1,0 +1,6 @@
+class BackendEndpoints {
+  static const pendingSellers = 'pending_sellers';
+  static const images = 'id.images';
+  static const users = 'users';
+  static const sellers = 'sellers';
+}
